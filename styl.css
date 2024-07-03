@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+    
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+/* all the projict */
+.container{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+}
+h3{
+    margin-bottom: 1rem;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    line-height: 1.6;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .btn button{
+    padding: 20px 45px;
+    border: none;
+    margin-top: 2rem ;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.container .btn .ios{
+    background: var(--Strong-Cyan);
+    box-shadow: 2px 2px #26baa4b4;
+}
+.container .btn .mac{
+    background: var(--Light-Blue);
+    box-shadow: 2px 2px #6173ffc2;
+}
+.container .btn .ios:hover{
+    background: #26baa481;
+}
+.container .btn .mac:hover{
+    background: #6173ff9c;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+}
+/* copy start  */
+#copy{
+    background:url(./images/bg-header-desktop.png) center/cover no-repeat ;
+    text-align: center;
+
+}
+#copy >h1{
+    font-size: 200px;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    color: var(--Strong-Cyan);
+}
+
+#copy .container h1{
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+}
+
+/* copy end */
+/* snippets start  */
+#snippets{
+    margin: 7rem 0;
+}
+#snippets .container{
+    margin-bottom: 4rem;
+}
+#snippets .container-foul{
+    margin-left: -2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+#snippets .container-foul .content{
+    margin-left: 4rem;
+}
+#snippets .container-foul .content div{
+    margin-bottom: 2rem;
+    width: 55%;
+}
+#snippets .container-foul img{
+    width: 60%;
+}
+
+#snippets .container .text{
+    margin-bottom: 4rem;
+}
+#snippets .container img{
+    width: 100%;
+}
+/* snippets end  */
+/* workflow start  */
+#workflow{
+    margin-bottom: 12rem;
+}
+
+#workflow .auto{
+    width: 80%;
+    margin: auto;
+   
+}
+#workflow .auto .img-prim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+}
+#workflow .auto .text{
+    text-align: center;
+}
+#workflow .auto .img-prim div{
+    text-align: center;
+    width: 380px;
+}
+#workflow .auto .img-prim div h3{
+    margin-top: 3rem;
+}
+#workflow .auto .img-scund{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12rem;
+}
+
+/* workflow end */
+/* footer start  */
+#footer{
+    background:#808a90;
+    text-align: center;
+}
+#footer>p{
+    color: #000;
+}
+#footer a{
+    color: var(--Strong-Cyan);
+}
+/* footer End  */
+/* Contact start  */
+#Contact{
+    background: #9fabb291;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px 0;
+}
+#Contact a,
+#footer a{
+    text-decoration: none;
+}
+#Contact ul{
+    list-style: none;
+}
+#Contact ul li{
+    margin-bottom: 1rem;
+}
+#Contact ul li a{
+    color: var(--Dark-Grayish-Blue);
+}
+#Contact .copy{
+    display: grid;
+    place-content: center;
+}
+#Contact .copy  a{
+    font-size: 70px;
+    font-family: sans-serif;
+    color: var(--Strong-Cyan);
+}
+#Contact .icons a {
+    margin: 0 1rem;
+}
+#Contact .icons a i{
+    font-size: 30px;
+    color: var(--Dark-Grayish-Blue);
+}
+#Contact ul li a:hover{
+    color: var(--Strong-Cyan);
+}
+#Contact .icons a i:hover{
+    color: var(--Strong-Cyan);
+}
+/* Contact end */
+/* taplet */
+@media(max-width:1200px){
+    .btn{
+        flex-direction: column;
+    }
+    #snippets .container-foul{
+        flex-direction: column;
+        margin: 0;
+    }
+    #snippets .container-foul .content{
+        margin: 0;
+        margin-top: 4rem;
+        text-align: center;
+      
+    }
+    #snippets .container-foul .content div{
+       margin: auto;
+       margin-bottom: 2rem;
+    }
+    #workflow .auto{
+        width: 90%;
+    }
+    #Contact .icons a{
+        margin: 0 5px;
+    } 
+}
+@media(max-width:550px){
+    #copy{
+        background: url(./images/bg-header-mobile.png)center/cover no-repeat;
+    }
+    .container{
+        width: 80%;
+    }
+  
+    #snippets .container-foul img{
+        width: 100%;
+        padding: 0 1rem;        
+    }
+    #workflow .auto .img-prim ,
+    #workflow .auto .img-scund{
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+    #workflow .auto .img-prim div{
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    #workflow .auto .img-prim div h3{
+        margin-top: 1rem;
+    }
+    #workflow .auto .img-scund img{
+        
+        width: 50%;
+        margin: 3rem auto;
+    }
+    #Contact{
+        grid-template-columns: 1fr;
+        
+    }
+    #Contact ul,
+    #Contact .icons{
+        text-align: center;
+    }
+    #Contact .icons a{
+        margin: 0 1rem;
+    }
+    #Contact .icons{
+        margin-top: 2rem;
+    }
+    #Contact ul li ,
+    #Contact .copy{
+        margin-bottom: 1.5rem;
+    }
+
+    
+   
+
+}
